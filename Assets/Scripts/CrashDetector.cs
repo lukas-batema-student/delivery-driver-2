@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -37,7 +36,7 @@ public class CrashDetector : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, int fadeSpeed = 5)
+    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, float fadeSpeed = 0.125f)
     {
         Color objectColor = blackOutSquare.GetComponent<Image>().color;
         float fadeAmount;
